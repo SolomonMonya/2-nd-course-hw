@@ -46,7 +46,6 @@ const user = {
 	age: 3034,
 	isAdmin: false
 }
-
 user['city of residence'] = 'Tziyon';
 user['age'] = -1011;
 delete user['city of residence'];
