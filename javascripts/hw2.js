@@ -1,8 +1,12 @@
-let a = 20;
+let a = 10;
 alert(a);
 console.log(a);
 
-let iphoneReleaseYear = 2007;
+a = 20;
+alert(a);
+console.log(a);
+
+const iphoneReleaseYear = 2007;
 alert(iphoneReleaseYear);
 console.log(iphoneReleaseYear);
 
