@@ -1,73 +1,73 @@
-// // Задача 1
-// let password = 'пароль';
-// let userPassword = prompt('Введите пароль')
-// if (userPassword === password) {console.log('Пароль введен верно')}
-// else {console.log('Пароль введен неправильно')}
+// Задача 1
+let password = 'пароль';
+let userPassword = prompt('Введите пароль')
+if (userPassword === password) {console.log('Пароль введен верно')}
+else {console.log('Пароль введен неправильно')}
 
-// // Задача 2
-// let c = 2;
-// (c > 0 && c < 10) ? alert('Верно') : alert('Неверно'); 
-// (c > 0 && c < 10) ? console.log('Верно') : console.log('Неверно'); 
+// Задача 2
+let c = 2;
+(c > 0 && c < 10) ? alert('Верно') : alert('Неверно'); 
+(c > 0 && c < 10) ? console.log('Верно') : console.log('Неверно'); 
 
-// // Задача 3
-// let d = 30;
-// let e = 120;
-// (d > 100 || e > 100) ? alert('Верно') : alert('Неверно');
-// (d > 100 || e > 100) ? console.log('Верно') : console.log('Неверно');
+// Задача 3
+let d = 30;
+let e = 120;
+(d > 100 || e > 100) ? alert('Верно') : alert('Неверно');
+(d > 100 || e > 100) ? console.log('Верно') : console.log('Неверно');
 
 
-// // Задача 4
-// let a = '2';
-// let b = '3';
-// // Код выше изменять менять нельзя, чтобы решить задачу исправьте код ниже: 
-// Number(alert(a + b));
-// Number(console.log(a + b));
+// Задача 4
+let a = '2';
+let b = '3';
+// Код выше изменять менять нельзя, чтобы решить задачу исправьте код ниже: 
+Number(alert(a + b));
+Number(console.log(a + b));
 
-// // Задача 5
-// let month = prompt('Введите порядковый номер месяца.')
-// switch (month) {
-//     case '1':
-//         console.log('Январь');
-//         break;
-//     case '2':
-//         console.log('Февраль');
-//         break;
-//     case '3':
-//         console.log('Март');
-//         break;
-//     case '4':
-//         console.log('Апрель');
-//         break;
-//     case '5':
-//         console.log('Май');
-//         break;
-//     case '6':
-//         console.log('Июнь');
-//         break;
-//     case '7':
-//         console.log('Июль');
-//         break;
-//     case '8':
-//         console.log('Август');
-//         break;
-//     case '9':
-//         console.log('Сентябрь');
-//         break;
-//     case '10':
-//         console.log('Октябрь');
-//         break;
-//     case '11':
-//         console.log('Ноябрь');
-//         break;
-//     case '12':
-//         console.log('Декабрь');
-//         break;
+// Задача 5
+let month = prompt('Введите порядковый номер месяца.')
+switch (month) {
+    case '1':
+        console.log('Январь');
+        break;
+    case '2':
+        console.log('Февраль');
+        break;
+    case '3':
+        console.log('Март');
+        break;
+    case '4':
+        console.log('Апрель');
+        break;
+    case '5':
+        console.log('Май');
+        break;
+    case '6':
+        console.log('Июнь');
+        break;
+    case '7':
+        console.log('Июль');
+        break;
+    case '8':
+        console.log('Август');
+        break;
+    case '9':
+        console.log('Сентябрь');
+        break;
+    case '10':
+        console.log('Октябрь');
+        break;
+    case '11':
+        console.log('Ноябрь');
+        break;
+    case '12':
+        console.log('Декабрь');
+        break;
 
         
-//     default:
-//         console.log('Такого номера месяца не существует!');
-//         break;
-// }
+    default:
+        console.log('Такого номера месяца не существует!');
+        break;
+}
 
 // Дополнительная практика
 
