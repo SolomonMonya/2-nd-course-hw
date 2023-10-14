@@ -22,7 +22,7 @@ button, input {
 
 .header {
   height: 1024px;
-  background-image: url(pictures/header__background.png);
+  background-image: url(pictures/index/header__background.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -81,15 +81,16 @@ button, input {
   margin-top: 12px;
 }
 
-.footer {
+.game-block {
   display: grid;
   gap: 32px;
   grid-template-columns: repeat(12, 1fr);
   background: #000915;
-  height: 556px;
   align-items: center;
+  padding-top: 128px;
+  padding-bottom: 128px;
 }
-.footer__nav-game {
+.game-block__nav-game {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -102,13 +103,69 @@ button, input {
   grid-column: span 4;
   padding-left: 32px;
   padding-bottom: 32px;
+  background-repeat: no-repeat;
 }
-.footer__game-img-1 {
-  background-image: url(pictures/footer__game-1.png);
+.game-block__game-img-1 {
+  background-image: url(pictures/index/game-block__img-1.png);
 }
-.footer__game-img-2 {
-  background-image: url(pictures/footer__game-2.png);
+.game-block__game-img-2 {
+  background-image: url(pictures/index/game-block__img-2.png);
 }
-.footer__game-img-3 {
-  background-image: url(pictures/footer__game-3.png);
+.game-block__game-img-3 {
+  background-image: url(pictures/index/game-block__img-3.png);
+}
+
+@media (max-width: 425px) {
+  .center-position {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    height: 735px;
+    background-image: url(pictures/mobile/header__background.png);
+    gap: 32px;
+    padding-top: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__box-welcome {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .header__text {
+    font-size: 32px;
+    grid-column: span 4;
+    text-align: center;
+  }
+  .header__box-go {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .header__paragraph {
+    font-size: 14px;
+    line-height: 22px;
+    grid-column: span 4;
+    text-align: center;
+  }
+  .header__paragraph-dedicated {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .header__button-go {
+    margin-top: 1px;
+  }
+  .game-block {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .game-block__game-img-1 {
+    background-image: url(pictures/mobile/game-block__img-1.png);
+  }
+  .game-block__game-img-2 {
+    background-image: url(pictures/mobile/game-block__img-2.png);
+  }
+  .game-block__game-img-3 {
+    background-image: url(pictures/mobile/game-block__img-3.png);
+  }
 }/*# sourceMappingURL=style.css.map */

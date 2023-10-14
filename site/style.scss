@@ -15,13 +15,14 @@ body {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
+
 button, input {
     font-family: 'Montserrat', sans-serif;
 }
 
 .header {
     height: 1024px;
-    background-image: url(pictures/header__background.png);
+    background-image: url(pictures/index/header__background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -36,6 +37,7 @@ button, input {
         gap: 32px;
 
     }
+
     &__text {
         color: #FFF;
         font-size: 64px;
@@ -45,12 +47,14 @@ button, input {
         grid-column: span 7;
 
     }
+
     &__box-go {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 32px;
 
     }
+
     &__paragraph {
         color: #FFF;
         font-size: 18px;
@@ -88,13 +92,15 @@ button, input {
 
 }
 
-.footer {
+.game-block {
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
     background: #000915;
-    height: 556px;
     align-items: center;
+    padding-top: 128px;
+    padding-bottom: 128px;
+
     &__nav-game {
         display: flex;
         flex-direction: column;
@@ -108,14 +114,20 @@ button, input {
         grid-column: span 4;
         padding-left: 32px;
         padding-bottom: 32px;
+        background-repeat: no-repeat;
     }
+
     &__game-img-1 {
-        background-image: url(pictures/footer__game-1.png);
+        background-image: url(pictures/index/game-block__img-1.png);
     }
+
     &__game-img-2 {
-        background-image: url(pictures/footer__game-2.png);
+        background-image: url(pictures/index/game-block__img-2.png);
     }
+
     &__game-img-3 {
-        background-image: url(pictures/footer__game-3.png);
+        background-image: url(pictures/index/game-block__img-3.png);
     }
 }
+
+@import 'mobile';

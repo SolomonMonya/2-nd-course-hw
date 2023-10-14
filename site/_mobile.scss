@@ -1,0 +1,72 @@
+
+// Задача 6
+@media (max-width: 425px) {
+    .center-position {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        height: 735px;
+        background-image: url(pictures/mobile/header__background.png);
+        gap: 32px;
+        padding-top: 0px;
+        align-items: center;
+        justify-content: center;
+
+        &__box-welcome {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+
+        }
+
+        &__text {
+            font-size: 32px;
+            grid-column: span 4;
+            text-align: center;
+
+        }
+
+        &__box-go {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+
+        }
+
+        &__paragraph {
+            font-size: 14px;
+            line-height: 22px;
+            grid-column: span 4;
+            text-align: center;
+
+        }
+
+        &__paragraph-dedicated {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &__button-go {
+            margin-top: 1px;
+        }
+
+    }
+
+    .game-block {
+        grid-template-columns: repeat(4, 1fr);
+
+        &__game-img-1 {
+            background-image: url(pictures/mobile/game-block__img-1.png);
+        }
+
+        &__game-img-2 {
+            background-image: url(pictures/mobile/game-block__img-2.png);
+        }
+
+        &__game-img-3 {
+            background-image: url(pictures/mobile/game-block__img-3.png);
+        }
+    }
+}
