@@ -129,5 +129,63 @@ button, input {
         background-image: url(pictures/index/game-block__img-3.png);
     }
 }
+.game-seasons {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+    background: #000915;
+    align-items: center;
+    padding-bottom: 233px;
+    padding-top: 233px;
+
+    
+    &__play-box {
+        display: flex;
+        align-items: flex-start;
+        grid-column: span 6;
+        flex-direction: column;
+        gap: 32px;
+
+    }
+
+    &__text {
+        color: #FFF;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    &__paragraph {
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+    }
+    &__button-game {
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 30px;
+        background: #9C0332;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 234px;
+        height: 49px;
+        margin-top: 12px;
+    }
+    &__img {
+        margin-left: 103px;
+        background-image: url(pictures/game-icons/game-seasons.png);
+        background-repeat: no-repeat;
+        grid-column: span 6;
+        height: 335px;
+    }
+
+
+}
 
 @import 'mobile';

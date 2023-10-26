@@ -1,5 +1,4 @@
 
-// Задача 6
 @media (max-width: 425px) {
     .center-position {
         padding-left: 16px;
@@ -67,6 +66,41 @@
 
         &__game-img-3 {
             background-image: url(pictures/mobile/game-block__img-3.png);
+        }
+    }
+    .game-seasons {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: repeat(4, 1fr);
+        background: #000915;
+        align-items: center;
+        padding-bottom: 85px;
+        padding-top: 51px;
+    
+        
+        &__play-box {
+            display: flex;
+            align-items: center;
+            grid-column: span 4;
+            flex-direction: column;
+            gap: 32px;
+    
+        }
+    
+        &__text {
+            font-size: 32px;
+
+        }
+        &__paragraph {
+            font-size: 14px;
+            text-align: center;
+        }
+        &__img {
+            margin-left: 0px;
+            margin-top: 64px;
+            background-image: url(pictures/game-icons/game-seasons-mobile.png);
+            grid-column: span 4;
+            height: 236px;
         }
     }
 }
