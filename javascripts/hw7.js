@@ -39,11 +39,10 @@ userNumber.forEach((numberElem) => {
 });
 console.log(maxElem);
 console.log(minElem);
-// Не работает так:
-// const userNumber = [52, 53, 49, 77, 21, 32];
-// console.log(Math.min(userNumber));
-// console.log(Math.max(userNumber));
-// Почему?
+
+console.log(Math.min(...userNumber));
+console.log(Math.max(...userNumber));
+
 
 // Задача 5
 
@@ -118,15 +117,15 @@ function gameMemory() {
       [fruitWords[i], fruitWords[j]] = [fruitWords[j], fruitWords[i]];
     
     };
-    fruitWords.split(' ');
+
     alert(fruitWords);
     
     let questionFirst = prompt('Чему равнялся первый элемент массива?');
     let questionLast = prompt('Чему равнялся последний элемент массива?');
     
-    if (fruitWords[0].toLowerCase() != questionFirst.toLowerCase() && fruitWords[6].toLowerCase() != questionLast.toLowerCase()) {
+    if (fruitWords[0].toLowerCase() != questionFirst.toLowerCase() && fruitWords[fruitWords.length - 1].toLowerCase() != questionLast.toLowerCase()) {
         alert('Вы ответили неверно.');
-    } else if (fruitWords[0].toLowerCase() != questionFirst.toLowerCase() || fruitWords[6].toLowerCase() != questionLast.toLowerCase()) {
+    } else if (fruitWords[0].toLowerCase() != questionFirst.toLowerCase() || fruitWords[fruitWords.length - 1].toLowerCase() != questionLast.toLowerCase()) {
         alert('Вы были близки к победе!');
     } else {
         alert('Всё верно, вы победили!');
