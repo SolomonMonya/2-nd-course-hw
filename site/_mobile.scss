@@ -103,4 +103,40 @@
             height: 236px;
         }
     }
+
+    .game-memory {
+        display: flex;
+        gap: 32px;
+        background: #000915;
+        align-items: center;
+        padding-bottom: 85px;
+        padding-top: 51px;
+        flex-direction: column-reverse;
+        
+        &__play-box {
+            display: flex;
+            align-items: center;
+            grid-column: span 4;
+            flex-direction: column;
+            gap: 32px;
+    
+        }
+    
+        &__text {
+            font-size: 32px;
+
+        }
+        &__paragraph {
+            font-size: 14px;
+            text-align: center;
+        }
+        &__img {
+            margin-right: 0px;
+            margin-top: 64px;
+            background-image: url(pictures/game-icons/game-memory-mobile.png);
+            grid-column: span 4;
+            height: 236px;
+            width: 344px;
+        }
+    }
 }
